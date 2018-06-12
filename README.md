@@ -9,7 +9,7 @@ So just create a single file, write the header declarations at the top, write th
 
 Example : mtvec.c
 ```
-#ifndef mtvec_
+#ifndef mtvec_h
 #define mtvec_h
 
 #include <stdio.h>
