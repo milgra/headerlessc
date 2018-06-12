@@ -5,12 +5,12 @@
 
 The ultimate solution seems to be using the `__INCLUDE_LEVEL__` preprocessor macro. It's value is zero if we are in a source file that was added directly to the compiler as parameter and greater than zero if we are in a file that was included as a header file from an other file.
 
-So just create a single file, write the header declarations at the top, write the implementation under it and guard the implementation with an `#if __INCLUDE_LEVEL__ == 0` macro and you never have to use header files again. You can include all files written this way as header files and add these files as source files to the compiler, everything will work as before.
+So just create a single file, write the header declarations at the top, write the implementation under that and guard the implementation with an `#if __INCLUDE_LEVEL__ == 0` macro and you never have to use header files again. You can include all files written this way as header files and add these files as source files to the compiler, everything will work as before.
 
 Example : mtvec.c
 ```
-#ifndef mtvec_`
-#define mtvec_h`
+#ifndef mtvec_
+#define mtvec_h
 
 #include <stdio.h>
 #include <stdint.h>
