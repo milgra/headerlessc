@@ -5,7 +5,7 @@
 
 The ultimate solution seems to be using the `__INCLUDE_LEVEL__` preprocessor macro. It's value is zero if we are in a source file that was added directly to the compiler as parameter and greater than zero if we are in a file that was included as a header file from an other file.
 
-So just create a single file, write the header declarations at the top, write the implementation under that and guard the implementation with an `#if __INCLUDE_LEVEL__ == 0` macro and you never have to use header files again. You can include all files written this way as header files and add these files as source files to the compiler, everything will work as before.
+So just create a single file, write the header declarations at the top, write the implementation under that and guard the implementation with an `#if __INCLUDE_LEVEL__ == 0` macro and you never have to use header files again unless you need a library interface. You can include all files written this way as header files and add these files as source files to the compiler, everything will work as before.
 
 Example : mtvec.c
 ```
@@ -61,4 +61,13 @@ void mtvec_reset( mtvec_t* vector )
 #endif
 ```
 
-At the moment I don't see any pitfalls in this solution, do you? Please add your thoughts in the issues, thank you.
+I created seven applications so far in headerless C and haven't faced any drawbacks yet, feel free to try them :
+
+MultiMedia File Manager (https://github.com/milgra/mmfm)
+Visual Music Player (https://github.com/milgra/vmp)
+Wayland Control Panel (https://github.com/milgra/wcp)
+Sway Overview (https://github.com/milgra/sov)
+Cortex (https://github.com/milgra/cortex)
+Termite (https://github.com/milgra/termite)
+Brawl (https://github.com/milgra/mmfm)
+
