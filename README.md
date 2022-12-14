@@ -1,5 +1,5 @@
 
-# Headerless C programming with a single preprocessor macro line
+# Headerless C programming with a single macro definition
 
  Header files in C can be painful. They duplicate the file count, increase complexity heavily, make refactoring painful. There are solutions to get rid of them. It's possible to use header generators ( https://www.hwaci.com/sw/mkhdr/ - makeheaders ), write you own headerless c dialect with a precompiler like me ( https://github.com/milgra/clc class-c ) or use `"#ifdef FOO_IMPLEMENTATION"` blocks inside header files to define everything in one file but they are unelegant and confusing and have a lot of other problems.
 
