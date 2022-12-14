@@ -63,11 +63,11 @@ void mtvec_reset( mtvec_t* vector )
 
 I created seven applications so far in headerless C and haven't faced any drawbacks yet, feel free to try them :
 
-MultiMedia File Manager (https://github.com/milgra/mmfm)
-Visual Music Player (https://github.com/milgra/vmp)
-Wayland Control Panel (https://github.com/milgra/wcp)
-Sway Overview (https://github.com/milgra/sov)
-Cortex (https://github.com/milgra/cortex)
-Termite (https://github.com/milgra/termite)
-Brawl (https://github.com/milgra/mmfm)
+- MultiMedia File Manager (https://github.com/milgra/mmfm)  
+- Visual Music Player (https://github.com/milgra/vmp)  
+- Wayland Control Panel (https://github.com/milgra/wcp)  
+- Sway Overview (https://github.com/milgra/sov)  
+- Cortex (https://github.com/milgra/cortex)  
+- Termite (https://github.com/milgra/termite)  
+- Brawl (https://github.com/milgra/mmfm)  
 
