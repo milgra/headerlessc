@@ -69,5 +69,5 @@ I created/maintain seven applications so far in headerless C and haven't faced a
 - Sway Overview (https://github.com/milgra/sov)  
 - Cortex (https://github.com/milgra/cortex)  
 - Termite (https://github.com/milgra/termite)  
-- Brawl (https://github.com/milgra/mmfm)  
+- Brawl (https://github.com/milgra/brawl)  
 
